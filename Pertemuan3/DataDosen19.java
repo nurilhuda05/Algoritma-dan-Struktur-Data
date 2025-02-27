@@ -1,5 +1,40 @@
 package Pertemuan3;
+import java.util.Scanner;
 public class DataDosen19 {
+    void menu(Dosen19 []arrayOfDosen){
+        while (true) {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("===MENU===");
+            System.out.println("1. Tampilkan Data Semua Dosen");
+            System.out.println("2. Tampilkan Jumlah Dosen Per Jenis Kelamin");
+            System.out.println("3. Tampilkan Rata-rata Usia Dosen Per Jenis Kelamin");
+            System.out.println("4. Tampilkan Dosen Paling Tua");
+            System.out.println("5. Tampilkan Dosen Paling Muda");
+            System.out.println("6. Keluar");
+            System.out.print("Masukkan Pilihan: ");
+            int pilihan = sc.nextInt();
+            if (pilihan == 1){
+                dataSemuaDosen(arrayOfDosen);
+            } else if (pilihan == 2){
+                jumlahDosenPerJenisKelamin(arrayOfDosen);
+            } else if (pilihan == 3){
+                rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+            } else if (pilihan == 4){
+                infoDosenPalingTua(arrayOfDosen);
+            } else if (pilihan == 5){
+                infoDosenPalingMuda(arrayOfDosen);
+            } else if (pilihan == 6){
+                System.out.println("Terimakasih");
+                break;
+            } else {
+                System.out.println("Maaf pilihan anda tidak ada");
+                
+            }
+            
+        }
+        
+    }
+
     void dataSemuaDosen(Dosen19 []arrayOfDosen){
         System.out.println("=== DATA SEMUA DOSEN ===");
         for (int i=0; i<arrayOfDosen.length; i++){
@@ -12,6 +47,7 @@ public class DataDosen19 {
         }
     }
     void jumlahDosenPerJenisKelamin (Dosen19 [] arrayOfDosen){
+        System.out.println("=== JUMLAH DOSEN PER JENIS KELAMIN ===");
         int pria = 0, wanita = 0;
         for (int i=0; i<arrayOfDosen.length; i++) {
             if (arrayOfDosen[i].jenisKelamin == true){
@@ -24,6 +60,7 @@ public class DataDosen19 {
         System.out.println("Jumlah Dosen Wanita\t: " + wanita);
     }
     void rerataUsiaDosenPerJenisKelamin (Dosen19 [] arrayOfDosen){
+        System.out.println("=== RERATA USIA DOSEN PER JENIS KELAMIN ===");
         int totalUsiaPria = 0, totalUsiaWanita = 0;
         int jmlhPria = 0, jmlhWanita = 0;
         for (int i=0; i<arrayOfDosen.length; i++) {
