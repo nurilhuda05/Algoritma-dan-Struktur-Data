@@ -1,6 +1,5 @@
 package Pertemuan3;
 import Pertemuan1.array;
-import Pertemuan3.Mahasiswa19;
 import java.util.Scanner;
 public class MahasiswaDemo19 {
     public static void main(String[] args) {
