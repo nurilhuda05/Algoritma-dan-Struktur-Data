@@ -24,7 +24,7 @@ public class NilaiMahasiswa {
         if (l == r) {
             return mahasiswa[l];
         }
-        int mid = (l + r) / 2;
+        int mid = (l + r) / 2;        
         NilaiMahasiswa maxKiri = cariUTSTertinggiDC(mahasiswa, l, mid);
         NilaiMahasiswa maxKanan = cariUTSTertinggiDC(mahasiswa, mid + 1, r);
         return (maxKiri.uts >= maxKanan.uts) ? maxKiri : maxKanan;
