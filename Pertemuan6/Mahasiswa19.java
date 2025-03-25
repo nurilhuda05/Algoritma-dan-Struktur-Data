@@ -9,9 +9,9 @@ public class Mahasiswa19 {
 
     }
     // Konstruktor berparameter (dibuat ada yang nama var parameter inputnya sama ada yang tidak)
-    Mahasiswa19(String nm, String name, String kls, double ip) {
-        nim = nm;
+    Mahasiswa19(String name, String nm, String kls, double ip) {
         nama = name;
+        nim = nm;
         ipk = ip;
         kelas = kls;
     }
