@@ -56,4 +56,4 @@ public class AntrianMain {
             }
         } while (pilihan!=0);
     }
-}
+} 

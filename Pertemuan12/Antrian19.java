@@ -12,4 +12,4 @@ public class Antrian19 {
     void tampilInformasi(){
         System.out.println(nim + "\t" + nama + "\t" + prodi + "\t" + kelas);
     }
-}
+} 

@@ -15,4 +15,4 @@ public class Mahasiswa19 {
     void tampilInformasi(){
         System.out.println(nim + "\t" + nama + "\t" + kelas + "\t" + ipk);
     }
-}
+} 

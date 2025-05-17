@@ -83,4 +83,4 @@ public class AntrianMedthod19 {
     public int jumlahAntrian(){
         return jumlahAntrian;
     }
-}
+} 

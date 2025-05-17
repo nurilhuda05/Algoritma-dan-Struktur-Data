@@ -5,4 +5,4 @@ public class Node19 {
         this.data = data;
         this.next = next;
     }
-}
+} 

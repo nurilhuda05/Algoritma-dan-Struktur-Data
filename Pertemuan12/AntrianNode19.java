@@ -5,4 +5,4 @@ public class AntrianNode19 {
         this.data = data;
         this.next = next;
     }
-}
+} 

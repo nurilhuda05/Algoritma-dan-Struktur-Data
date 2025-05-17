@@ -37,4 +37,4 @@ public class SLLMain19 {
         sll.print();
         sll.remove("huda");                           
     }
-}
+} 
